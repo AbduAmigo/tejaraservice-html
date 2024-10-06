@@ -1,0 +1,42 @@
+:root {
+    --primary-dark-color: #000;
+    --secondary-dark-color: #9BF4D5; 
+
+    --primary-dark-background: #000;
+    --secondary-dark-background: #9BF4D5;
+
+    --primary-background: #000;
+    --secondary-background: #9BF4D5;
+
+    --primary-text-color: #fff;
+    --secondary-text-color: #3DD2CC;
+
+    --primary-button: #368f8b;
+    --secondary-button: #9BF4D5;
+}
+
+body{
+    background-color: var(--primary-background);
+    font-family: 'DM Sans', sans-serif;
+    /* background: rgb(0,0,0);
+    background: linear-gradient(140deg, rgba(0,0,0,1) 57%, #9bf4d5 100%); */
+    background: rgb(0,0,0);
+background: linear-gradient(157deg, rgba(0,0,0,1) 32%, rgba(155,244,213,1) 100%);
+    height: 100vh;
+}
+
+/* navbar */
+.logo{
+    width: 150px;
+    display: block;
+}
+#navbarScroll a{
+    color: var(--primary-text-color) !important;
+    font-weight: 600;
+}
+
+#navbarScroll .btn-primary{
+    background-color: var(--primary-button) !important;
+    color: var(--primary-text-color) !important;
+    border-color: var(--primary-button);
+}
