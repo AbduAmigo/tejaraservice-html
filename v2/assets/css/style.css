@@ -22,7 +22,7 @@ body{
     background-color: var(--primary-background);
     font-family: 'DM Sans', sans-serif;
     background: rgb(0,0,0);
-    background: linear-gradient(157deg, rgba(0,0,0,1) 32%, rgba(155,244,213,1) 100%);
+background: linear-gradient(140deg, rgba(0,0,0,1) 28%, rgba(44,74,69,1) 44%, rgba(139,231,216,1) 100%);
 }
 
 /* navbar */
