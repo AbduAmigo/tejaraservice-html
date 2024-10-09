@@ -13,15 +13,16 @@
 
     --primary-button: #368f8b;
     --secondary-button: #9BF4D5;
+
+    --text-shadow-primary: 2px 5px 35px #000;
+    --text-shadow-secondary: 2px 5px 35px rgba(155,244,213,0.78);
 }
 
 body{
     background-color: var(--primary-background);
     font-family: 'DM Sans', sans-serif;
-    /* background: rgb(0,0,0);
-    background: linear-gradient(140deg, rgba(0,0,0,1) 57%, #9bf4d5 100%); */
     background: rgb(0,0,0);
-background: linear-gradient(157deg, rgba(0,0,0,1) 32%, rgba(155,244,213,1) 100%);
+    background: linear-gradient(157deg, rgba(0,0,0,1) 32%, rgba(155,244,213,1) 100%);
 }
 
 /* navbar */
@@ -29,6 +30,7 @@ background: linear-gradient(157deg, rgba(0,0,0,1) 32%, rgba(155,244,213,1) 100%)
     width: 150px;
     display: block;
 }
+
 #navbarScroll a{
     color: var(--primary-text-color) !important;
     font-weight: 600;
@@ -39,12 +41,130 @@ background: linear-gradient(157deg, rgba(0,0,0,1) 32%, rgba(155,244,213,1) 100%)
     color: var(--primary-text-color) !important;
     border-color: var(--primary-button);
 }
+
 h1{
     color: var(--primary-text-color);
+    text-shadow: var(--text-shadow-secondary);
 }
 
 .primary-color{
-    color: var(--secondary-button);
-    font-size: 6rem;
+    color: var(--secondary-button) !important; 
+    font-size: 10rem;
     font-family: cursive;
+}
+
+.fs-1{
+    font-size: 5em !important;
+    font-weight: 600;
+}
+
+.text-shadow{
+    text-shadow: var(--text-shadow-secondary) !important;
+}
+
+h4{
+    color: var(--primary-text-color);
+    text-align: justify;
+}
+
+.glass{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+}
+
+.btn-primary{
+    background-color: var(--primary-button) !important;
+    color: var(--primary-text-color) !important;
+    border-color: var(--primary-button);
+}
+
+.btn-outline-primary{
+    background-color: var(--primary-button) !important;
+    color: var(--primary-text-color) !important;
+    border-color: var(--primary-button);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--primary-button) !important;
+    color: var(--primary-text-color) !important;
+    border-color: var(--primary-button);
+}
+
+.border-primary{
+    border-color: var(--primary-button) !important; ;
+}
+
+.bg-primary{
+    background-color: var(--primary-button) !important;
+}
+
+.icon1 img{
+    width: 40px;
+    position: absolute;
+    right: 27em;
+    top: 10em;
+    animation: bounce 3s infinite;
+}
+
+.icon2 img{
+    width: 40px;
+    position: absolute;
+    left: 16em;
+    top: 28em;
+    animation: bounce 3s infinite;
+}
+
+.icon3 img{
+    width: 40px;
+    position: absolute;
+    left: 54em;
+    top: 15em;
+    animation: bounce 4s infinite;
+}
+
+.icon4 img{
+    width: 40px;
+    position: absolute;
+    left: 37em;
+    top: 42em;
+    animation: bounce 4s infinite;
+}
+
+.icon5 img{
+    width: 40px;
+    position: absolute;
+    right: 30em;
+    animation: bounce 5s infinite;
+}
+
+.icon6 img{
+    width: 40px;
+    position: absolute;
+    right: 82em;
+    top: 38em;
+    animation: bounce 3s infinite;
+}
+
+.icon7 img{
+    width: 40px;
+    position: absolute;
+    left: 32em;
+    top: 8em;
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Start at the original position */
+    }
+    40% {
+        transform: translateY(-30px); /* Move up */
+    }
+    60% {
+        transform: translateY(-15px); /* Move slightly down */
+    }
 }
